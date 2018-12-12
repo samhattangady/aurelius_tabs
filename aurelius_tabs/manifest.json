@@ -1,0 +1,13 @@
+{
+  "name": "Aurelius Tabs",
+  "version": "0.1",
+  "description": "A Chrome extension to remember the words of Marcus Aurelius",
+  "manifest_version": 2,
+  "chrome_url_overrides" : {
+    "newtab": "meditations.html"
+  },
+  "background": {
+    "scripts": ["meditations.js"],
+    "persistent": false
+  }
+}

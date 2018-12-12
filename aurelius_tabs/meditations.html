@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Tab - Meditations by Marcus Aurelius</title>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+  </head>
+  <body>
+    <h3 id='pageheader'> A Meditation by Marcus Aurelius </h3>
+    <p id='meditation'></p>
+    <style>
+      body {
+        font-family: 'Merriweather', serif;
+        background-color: #fafafa;
+        font-size: 18px;
+        text-align: center;
+      }
+      #meditation {
+        position: absolute;
+        color: #eeeeee;
+        left: 50vw;
+        top: 50vh;
+        transform: translate(-50%, -50%);
+      }
+      #meditation:hover {
+        color: #424242;
+      }
+      #pageheader {
+        position: absolute;
+        top: 10vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        color: #dddddd;
+      }
+    </style>
+    <script src='meditations.js'></script>
+  </body>
+</html>

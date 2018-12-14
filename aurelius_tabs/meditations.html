@@ -4,39 +4,28 @@
     <title>New Tab - Meditations by Marcus Aurelius</title>
     <meta charset='utf-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Material+Icons" rel="stylesheet">
+    <link href='meditations.css' rel='stylesheet'></link>
   </head>
   <body>
-    <h3 id='pageheader'> A Meditation by Marcus Aurelius </h3>
-    <p id='meditation'></p>
-    <style>
-      body {
-        font-family: 'Merriweather', serif;
-        background-color: #fafafa;
-        font-size: 18px;
-        text-align: center;
-      }
-      #meditation {
-        position: absolute;
-        color: #eeeeee;
-        left: 50vw;
-        top: 50vh;
-        transform: translate(-50%, -50%);
-      }
-      #meditation:hover {
-        color: #424242;
-      }
-      #pageheader {
-        position: absolute;
-        top: 10vh;
-        left: 50vw;
-        transform: translate(-50%, -50%);
-        color: #dddddd;
-      }
-    </style>
-    <script src='meditations.js'></script>
+    <div class='container page'>
+      <h3 class='navbar'> A Meditation by Marcus Aurelius </h3>
+      <div class='container page content'>
+        <div class='meditation-text'>
+          <p id='meditation'></p>
+        </div>
+        <p id='source'></p>
+        <div class='buttonrow'>
+          <a onclick='setPrevious()'><i class="material-icons">navigate_before</i></a>
+          <a onclick=''><i class="material-icons">star</i></a>
+          <a onclick='setRandom()'><i class="material-icons">refresh</i></a>
+          <a onclick='setNext()'><i class="material-icons">navigate_next</i></a>
+        </div>
+      </div>
+      <p class='footer'> A Chrome Extension by <a href='https://github.com/samhattangady/aurelius_tabs/'>Sam</a></p>
+    </div>
   </body>
+
+  <script src='meditations_data.js'></script>
+  <script src='meditations.js'></script>
 </html>

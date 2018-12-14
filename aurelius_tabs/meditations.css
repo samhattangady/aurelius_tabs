@@ -1,0 +1,74 @@
+html {
+  background-color: #fafafa;
+  text-align: center;
+  height: 100vh;
+  color: #cccccc;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  height: 100%;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.page {
+  flex-direction: column;
+}
+
+.navbar {
+  height: 50px;
+}
+
+.content {
+  max-width: 800px;
+  align-self: center;
+  justify-content: space-between;
+  margin: 15px;
+  color: #e0e0e0;
+}
+.content:hover {
+  color: #424242;
+}
+
+.meditation-text {
+  flex-grow: 1;
+  overflow: auto;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonrow {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer a {
+  color: #ccccff;
+}
+/*
+#meditation {
+  position: absolute;
+  color: #eeeeee;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}
+#meditation:hover {
+  color: #424242;
+}
+#pageheader {
+  position: absolute;
+  top: 10vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  color: #dddddd;
+}
+*/

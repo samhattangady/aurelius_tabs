@@ -29,5 +29,12 @@ function setPrevious() {
   setIndex(INDEX);
 }
 
+function enableButtons() {
+  document.getElementById('refresh').onclick = setRandom;
+  document.getElementById('next').onclick = setNext;
+  document.getElementById('previous').onclick = setPrevious;
+}
+
+enableButtons()
 setRandom()
 

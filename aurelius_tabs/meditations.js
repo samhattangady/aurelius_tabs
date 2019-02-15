@@ -1,8 +1,13 @@
 var INDEX = 0;
 var KEYS = Object.keys(MEDITATIONS);
+var MAX_LENGTH = 300;
 
 function getRandomIndex() {
   INDEX = Math.floor(Math.random() * Math.floor(KEYS.length));
+  // TODO: Feels wrong to have this here. Should be in a nicer place.
+  if (MAX_LENGTH > 0 && MEDITATIONS[KEYS[INDEX]].length > MAX_LENGTH) {
+    return getRandomIndex();
+  }
   return INDEX;
 }
 
